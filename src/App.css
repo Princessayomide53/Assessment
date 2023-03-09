@@ -1,7 +1,19 @@
-.box {
-transition: 0.3s ease-in;
+
+
+/* .img{
+    transition: all 0.4s ease-in;
+    ;
+} */
+
+.zoom-in {
+    animation: zoom-in 4s ease-in;
 }
 
-.img{
-    transition: all 0.4s ease-in;
+@keyframes zoom-in {
+    0%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
 }

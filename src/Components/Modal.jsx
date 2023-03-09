@@ -5,7 +5,7 @@ const Modal = ({ data, open, onClose }) => {
     const {imgScr, title, desc, Chain, Created, page} = data
     if (!open) return null;
     
-//   const modalStyling = { display: "block" };
+
     return (
       <div className="flex flex-col justify-center items-center fixed bg-[#7c7979] bg-opacity-30 inset-0 w-full h-screen">
         <div className="absolute top-[28%] left-[14%] lg:top-[28%] lg:left-[31%] xl:top-[28%] xl:left-[31%] 2xl:top-[28%] 2xl:left-[31%] w-full">

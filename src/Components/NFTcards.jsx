@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NFTAdventure from "../Data/NFTAdventure";
 import Modal from "./Modal";
 
+
 function NFTcards() {
   const [selectedData, setSelectedData] = useState({});
   const [modalOpen, setModalOpen] = useState(null);
@@ -24,8 +25,8 @@ function NFTcards() {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 m-0 grid-cols-1 mx-auto w-[85%] pl-8 lg:pl-0 md:pl-0 sm:pl-0 ">
         {NFTAdventure.NFTData.map((data, id) => (
           <div className="space-y-10 " key={id}>
-            <div className="box lg:w-[85%] md:w-[90%] w-[95%] rounded-md h-[90%] bg-[#cbe7f7] pl-5 pr-5 pt-2 ">
-              <div className="mb-8 img ">
+            <div className="zoom-in lg:w-[85%] md:w-[90%] w-[95%] sm:w-full rounded-md h-[92%] bg-[#cbe7f7] pl-5 pr-5 pt-2 ">
+              <div className="mb-8">
                 <center>
                   <img src={data.imgScr} alt="" className="rounded-lg" />
                 </center>
